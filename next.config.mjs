@@ -1,1 +1,1 @@
-/** @type {import('next').NextConfig} */const nextConfig = {  eslint: {    ignoreDuringBuilds: true  },  experimental: {    turbo: {}  },  telemetry: false}export default nextConfig;
+/** @type {import('next').NextConfig} */const nextConfig = {  eslint: {    ignoreDuringBuilds: true  },  experimental: {    turbo: {}  },  telemetry: false};export default nextConfig;
