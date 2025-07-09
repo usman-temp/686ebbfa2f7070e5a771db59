@@ -1,15 +1,1 @@
-export const metadata = {
-  title: 'Culinary Canvas | Home',
-  description: 'Discover delicious recipes and cooking techniques',
-};
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      {' '}
-      <body className="bg-gradient-to-b from-orange-50 to-amber-50">
-        {' '}
-        {children}{' '}
-      </body>{' '}
-    </html>
-  );
-}
+/* eslint-disable */export const metadata = {  title: 'Culinary Canvas | Home',  description: 'Discover delicious recipes and cooking techniques',};export default function RootLayout({ children }) {  return (    <html lang="en">      <body className="bg-gradient-to-b from-orange-50 to-amber-50">        <nav className="sticky top-0 bg-white/80 backdrop-blur-md border-b border-orange-100 z-50">          <div className="container mx-auto px-4 py-4 flex items-center justify-between">            <h1 className="text-2xl font-bold text-orange-600">CulinaryCanvas</h1>            <div className="hidden md:flex space-x-6">              {['Recipes', 'Tutorials', 'Articles', 'About'].map((item) => (                <a                  key={item}                  href="#"                  className="text-orange-800 hover:text-orange-600 transition-colors"                  aria-label={`Navigate to ${item}`}                >                  {item}                </a>              ))}            </div>          </div>        </nav>        {children}      </body>    </html>  );}
